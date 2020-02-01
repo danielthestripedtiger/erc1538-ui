@@ -3,7 +3,7 @@ var orgChartData = [
 		id: "1",
 		text: "Chairman & CEO",
 		title: "Henry Bennett",
-		img: "../src/common/img/avatar-1.png"
+		img: "./contract.png"
 	},
 	{
 		id: "2",
@@ -39,8 +39,8 @@ var bitOrgChartData = [
 	{
 		"id": "1",
 		"text": "Chairman & CEO",
-		"title": "Henry Bennett",
-		"img": "../src/common/img/avatar-1.png"
+		"title": "YODA Bennett",
+		"img": "./contract.png"
 	},
 	{
 		"id": "2",
