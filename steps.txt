@@ -1,0 +1,7 @@
+npm install --save react-d3-library
+npm install --save d3-mitch-tree
+npm i babel-loader
+npm install --save-dev npm-install-webpack-plugin
+npm install typescript
+npm install --save webpack
+npm install @material-ui/core

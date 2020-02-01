@@ -1,0 +1,84 @@
+.dhx_demo_diagram-conectors .dhx_diagram {
+    width: 1200px;
+    background: #fff;
+}
+.dhx_demo_diagram-conectors .dhx_diagram_line {
+    stroke: #87A4BC;
+}
+.dhx_demo_diagram-conectors .dhx_diagram_arrow {
+    stroke: #87A4BC;
+    fill: #87A4BC;
+}
+.dhx_tabbar--top .dhx_layout-cell {
+    height: 700px;
+}
+.dhx_demo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.dhx_demo__footer-container {
+    padding: 16px;
+}
+.dhx_demo__footer-controls {
+    background: #fff;
+    height: 80px;
+    width: 1168px;
+    display: flex;
+    justify-content: space-between;
+}
+.dhx_demo__footer-controls--left, .dhx_demo__footer-controls--right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dhx_tabbar-container, .dhx_demo__tabbar-container {
+    width: 1200px;
+}
+.dhx_tabbar-container .dhx_diagram, .dhx_tabbar-container .dhx_wrapper {
+    background: #F7F7F7;
+}
+.dhx_tabbar-container .dhx_diagram {
+    border-right: 1px solid #e4e4e4;
+    border-left: 1px solid #e4e4e4;
+}
+.dhx_tabbar-container .dhx_button--view_link {
+    border: 1px solid #0288d1;
+    margin-left: 24px;
+}
+.dhx_tabbar-container .dhx_button--view_flat {
+    margin-right: 24px;
+}
+.dhx_demo__editor_scale-container {
+    display: flex;
+    background: #F7F7F7;
+    height: 32px;
+    border-radius: 32px;
+    margin-left: 24px;
+    border: 1px solid #DFDFDF;
+}
+.dhx_demo__editor_scale-container, .dxi {
+    color: #5F5F5F;
+}
+.dhx_demo__editor_scale-container .dhx_button {
+    background: #F7F7F7;
+    width: 32px;
+    border-radius: 32px;
+}
+.dhx_demo__editor_scale-value {
+    width: 40px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+.dhx_demo_modal .dhx_window-content-without-header {
+    padding: 0;
+}
+.dhx_window-content {
+    padding: 0;
+}
+.dhx_window-header {
+    display: none;
+}

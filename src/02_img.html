@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta block -->
+		<title>Image card editor - DHTMLX Diagram</title>
+		<meta name="description" content="Check interactive samples of DHTMLX Diagram to explore its org chart editor and other details.">
+		<!-- end meta block -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+		<script type="text/javascript" src="./diagram.js?v=2.2.1"></script>
+		<link rel="stylesheet" href="./diagram.css?v=2.2.1">
+		<link rel="stylesheet" href="./index.css?v=2.2.1">
+		<link rel="stylesheet" href="./common/diagram.css?v=2.2.1">
+		<script type="text/javascript" src="./common/data.js?v=2.2.1"></script>
+		<!-- custom sample head -->
+		<script type="text/javascript" src="./diagramWithEditor.js?v=2.2.1"></script>
+		<link rel="stylesheet" href="./diagramWithEditor.css?v=2.2.1">
+		<style>
+			body > .dhx_widget {
+				max-height: calc(100% - 61px);
+			}
+		</style>
+	</head>
+	<body>
+		<header class="dhx_sample-header">
+			<div class="dhx_sample-header__main">
+
+				<h1 class="dhx_sample-header__title">
+					<div class="dhx_sample-header__content">
+						Image card editor.
+					</div>
+				</h1>
+			</div>
+		</header>
+		<script>
+			var editor = new dhx.DiagramEditor(document.body, {
+				type: "org",
+				shapeType: "img-card",
+				showApply: false,
+				showReset: false
+			});
+			editor.parse(bitOrgChartData);
+		</script>
+	</body>
+</html>
