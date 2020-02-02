@@ -1,0 +1,45 @@
+
+    /* #container {
+      width: 100%;
+      height: 400px;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 7px;
+      touch-action: none;
+    } */
+    #item1 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(245, 230, 99);
+      border: 10px solid rgba(136, 136, 136, .5);
+      border-radius: 50%;
+      touch-action: none;
+      user-select: none;
+    }
+    #item1:active {
+      background-color: rgba(168, 218, 220, 1.00);
+    }
+    #item1:hover {
+      cursor: pointer;
+      border-width: 20px;
+    }
+    #item2 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(245, 230, 99);
+        border: 10px solid rgba(136, 136, 136, .5);
+        border-radius: 50%;
+        touch-action: none;
+        user-select: none;
+      }
+      #item2:active {
+        background-color: rgba(168, 218, 220, 1.00);
+      }
+      #item2:hover {
+        cursor: pointer;
+        border-width: 20px;
+      }
+  

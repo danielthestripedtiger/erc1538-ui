@@ -2548,10 +2548,10 @@ if (window.dhx && (window.dhx_legacy = dhx, delete window.dhx), function(t, e) {
         e.default = {
             applyAll: "Apply all",
             resetChanges: "Reset Changes",
-            editCard: "Edit Card",
-            color: "Color",
-            position: "Position",
-            size: "Size"
+            // editCard: "Edit Card",
+            // color: "Color",
+            // position: "Position",
+            // size: "Size"
         }
     }, function(t, e, i) {
         "use strict";
@@ -4704,11 +4704,13 @@ if (window.dhx && (window.dhx_legacy = dhx, delete window.dhx), function(t, e) {
                     return null !== t && t.apply(this, arguments) || this
                 }
                 return n(e, t), e.prototype.getMetaInfo = function() {
-                    return [{
+                    return [
+                        {
                         id: "title",
                         label: "Title",
                         type: "text"
-                    }, {
+                    }
+                    , {
                         id: "text",
                         label: "Text",
                         type: "text"
@@ -5908,10 +5910,10 @@ if (window.dhx && (window.dhx_legacy = dhx, delete window.dhx), function(t, e) {
             applyAll: "Apply all",
             exportData: "Export Data",
             resetChanges: "Reset Changes",
-            editCard: "Edit Card",
-            color: "Color",
-            position: "Position",
-            size: "Size",
+            // editCard: "Edit Card",
+            // color: "Color",
+            // position: "Position",
+            // size: "Size",
             save: "Save",
             reset: "Reset",
             shapeChangeTooltip: "Choose new type of shape from left toolbar"
@@ -6046,7 +6048,8 @@ if (window.dhx && (window.dhx_legacy = dhx, delete window.dhx), function(t, e) {
                 }, t
             }();
         e.Sidebar = l
-    }, function(t, e, i) {
+    }, 
+    function(t, e, i) {
         "use strict";
         Object.defineProperty(e, "__esModule", {
                 value: !0
@@ -6057,7 +6060,8 @@ if (window.dhx && (window.dhx_legacy = dhx, delete window.dhx), function(t, e) {
             function(t) {
                 t.palette = "palette", t.picker = "picker"
             }(e.ViewsTypes || (e.ViewsTypes = {}))
-    }, function(t, e, i) {
+    }, 
+    function(t, e, i) {
         "use strict";
         Object.defineProperty(e, "__esModule", {
                 value: !0
@@ -8254,54 +8258,60 @@ if (window.dhx && (window.dhx_legacy = dhx, delete window.dhx), function(t, e) {
             value: !0
         });
         var n = i(0);
-        e.baseSidebar = [{
-            id: "color",
-            type: "color",
-            label: "Color",
-            hint: "Top line",
-            value: "#FFDDFF"
-        }, {
-            id: "position",
-            type: "inputsGroup",
-            label: "Position",
-            validate: "number",
-            options: [{
-                id: "dx",
-                value: "1000",
-                label: "dx",
-                validate: "number"
-            }, {
-                id: "dy",
-                value: "999",
-                label: "dy",
-                validate: "number"
-            }]
-        }, {
-            id: "size",
-            type: "inputsGroup",
-            label: "Size",
-            options: [{
-                id: "width",
-                value: "1000",
-                label: "w",
-                validate: "number"
-            }, {
-                id: "height",
-                value: "999",
-                label: "h",
-                validate: "number"
-            }]
-        }], e.freeSidebar = [{
+        e.baseSidebar = [
+        //     {
+        //     id: "color",
+        //     type: "color",
+        //     label: "Color",
+        //     hint: "Top line",
+        //     value: "#FFDDFF"
+        // }, 
+        // {
+        //     id: "position",
+        //     type: "inputsGroup",
+        //     label: "Position",
+        //     validate: "number",
+        //     options: [{
+        //         id: "dx",
+        //         value: "1000",
+        //         label: "dx",
+        //         validate: "number"
+        //     }, {
+        //         id: "dy",
+        //         value: "999",
+        //         label: "dy",
+        //         validate: "number"
+        //     }]
+        // }, 
+        // {
+        //     id: "size",
+        //     type: "inputsGroup",
+        //     label: "Size",
+        //     options: [{
+        //         id: "width",
+        //         value: "1000",
+        //         label: "w",
+        //         validate: "number"
+        //     }, {
+        //         id: "height",
+        //         value: "999",
+        //         label: "h",
+        //         validate: "number"
+        //     }]
+        // }
+    ], e.freeSidebar = [{
             id: "arrange",
             type: "inputsGroup",
             label: "Arrange",
             validate: "number",
-            options: [{
+            options: [
+                {
                 id: "x",
                 value: "1000",
                 label: "x",
                 validate: "number"
-            }, {
+            }, 
+            {
                 id: "y",
                 value: "999",
                 label: "y",

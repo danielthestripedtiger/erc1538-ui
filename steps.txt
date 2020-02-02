@@ -5,3 +5,7 @@ npm install --save-dev npm-install-webpack-plugin
 npm install typescript
 npm install --save webpack
 npm install @material-ui/core
+
+npm i styled-components
+npm i jquery
+npm i jquery-ui
