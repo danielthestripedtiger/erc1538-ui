@@ -198,9 +198,11 @@
 
 /* line 160, ex.scss */
 #ex-050-stage {
-  width: 10000px;
-  height: 1000px;
+  overflow: scroll;
+  width: 75%;
+  height: 10000px;
   position: relative;
+  float: left;
 }
 
 /* line 165, ex.scss */
