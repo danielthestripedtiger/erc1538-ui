@@ -8,4 +8,10 @@ npm install @material-ui/core
 
 npm i styled-components
 npm i jquery
-npm i jquery-ui
+npm i jquery-ui-dist
+
+https://classic.yarnpkg.com/en/docs/install/#windows-stable
+
+npm i react-lineto
+
+https://anseki.github.io/plain-draggable/

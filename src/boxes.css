@@ -1,17 +1,53 @@
-#box1 { position:absolute;
-    top:0px;
-    left:100px;
-width:100px;
-height:100px;
-color:red;
-background-color:black;
+#content{
+    position:relative;
+  }
+  .mydiv{
+    border:1px solid #368ABB;
+    background-color:#43A4DC;
+    position:absolute;
+  }
+  .mydiv:after{
+    content:no-close-quote;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background-color:black;
+    width:4px;
+    height:4px;
+    border-radius:50%;
+    margin-left:-2px;
+    margin-top:-2px;
+  }
+  #div1{
+    left:200px;
+    top:200px;
+    width:50px;
+    height:50px;
+  }
+  #div2{
+    left:20px;
+    top:20px;
+    width:50px;
+    height:40px;
+  }
+  #line{
+    position:absolute;
+    width:1px;
+    background-color:red;
+  }  
 
-}
-#box2 { position:absolute;
-    top:300px;
-    left:300px;
-width:100px;
-height:100px;
-color:red;
-background-color:black;
-}
+  #div1:active {
+    background-color: rgba(168, 218, 220, 1.00);
+  }
+  #div1:hover {
+    cursor: pointer;
+    border-width: 20px;
+  }
+
+    #div2:active {
+      background-color: rgba(168, 218, 220, 1.00);
+    }
+    #div2:hover {
+      cursor: pointer;
+      border-width: 20px;
+    }

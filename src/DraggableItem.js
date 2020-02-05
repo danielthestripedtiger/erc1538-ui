@@ -78,6 +78,12 @@ class DraggableItem extends React.Component {
         yOffset = currentY;
     
         setTranslate(currentX, currentY, dragItem);
+        // this.setState(
+        //   {
+        //     currX: currentX,
+        //     currY: currentY
+        //   }
+        // )
       }
     }
     
@@ -90,7 +96,8 @@ class DraggableItem extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      currX : 0,
+      currY : 0
     }
   }
 

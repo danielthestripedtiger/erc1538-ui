@@ -24,12 +24,148 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+    
+    <script src="./anseki-plain-draggable-827c122/plain-draggable.min.js">
+    </script>
+
+<script src="./anseki-leader-line/leader-line.min.js"></script>
+<link rel="stylesheet" href="./ex.css">
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <div id="root"></div>
+
+    <div class="cols2">
+      <div class="col">
+        <p>Event listeners help to synchronize with another library. This is a case of <a href="https://anseki.github.io/leader-line/">LeaderLine</a>.</p>
+      </div>
+      <div class="col">
+
+    <div id="ex-050-stage" class="stage-m">
+      <div id="item2" style="position: absolute;top: 0px;left: 600px;" class="draggable">
+        <br/><img class="componentImg" src="./function.png"/><p style="float: right;">Function Name:<br/>register()
+        <br/>
+        <br/>
+
+        Description:        <br/>
+        Deploy Date:        <br/>
+
+      </p>
+    </div>
+    <div id="item3" style="position: absolute;top: 200px;left: 100px;" class="draggable">
+      <br/><img class="componentImg" src="./function.png"/><p style="float: right;">Function Name:<br/>register()
+      <br/>
+      <br/>
+
+      Description:        <br/>
+      Deploy Date:        <br/>
+
+    </p>
+  </div>
+      <!-- <div id="ex-050-stage-in"> -->
+        <div id="item1" style="position: absolute;top: 0px;left: 0px;" class="draggable">
+
+            <br/><img class="componentImg" src="./contract.png"/><p style="float: right;">Contract:<br/>0x52DECe7A963b878Be76A90Ce2B8a955B4A1c0940
+            <br/>
+            <br/>
+    
+            Name:        <br/>
+            Description:        <br/>
+            Deploy Date:        <br/>
+    
+          </p>
+      
+      <!-- </div> -->
+    </div>
+    
+      </div>
+    </div>
+    
+    <script>
+    window.addEventListener('load', function() {
+      'use strict';
+    
+      var target1 = document.getElementById('item1'),
+        target2 = document.getElementById('item2'),
+        wallBBox = document.getElementById('ex-050-stage').getBoundingClientRect(),
+        line;
+    
+      wallBBox = {
+        top: wallBBox.top + window.pageYOffset - target1.getBoundingClientRect().height,
+        right: wallBBox.right + window.pageXOffset
+      };
+    
+      new PlainDraggable(target1, {
+        onDrag: function(moveTo) {
+          var rect = this.rect;
+          if (moveTo.left < wallBBox.right && moveTo.top > wallBBox.top) { // Inside
+            if (rect.left >= wallBBox.right) {
+              moveTo.left = wallBBox.right;
+            } else if (rect.top <= wallBBox.top) { // Avoid fixing both left and top.
+              moveTo.top = wallBBox.top;
+            }
+          }
+        },
+        onMove: function() { line.position(); },
+        onMoveStart: function() { line.dash = {animation: true}; },
+        onDragEnd: function() { line.dash = false; }
+      });
+    
+      new PlainDraggable(target2, {
+        onMove: function() { line.position(); },
+        onMoveStart: function() { line.dash = {animation: true}; },
+        onDragEnd: function() { line.dash = false; },
+        zIndex: false
+      });
+    
+      line = new LeaderLine(target1, target2,
+        {startPlug: 'disc', endLabel: LeaderLine.pathLabel('', {fontFamily: 'Arial, sans-serif'})});
+    
+
+
+
+
+
+        //  target1 = document.getElementById('item1'),
+        var target3 = document.getElementById('item3'),
+        wallBBox2 = document.getElementById('ex-050-stage').getBoundingClientRect(),
+        line2;
+    
+      wallBBox2 = {
+        top: wallBBox2.top + window.pageYOffset - target1.getBoundingClientRect().height,
+        right: wallBBox2.right + window.pageXOffset
+      };
+    
+      new PlainDraggable(target1, {
+        onDrag: function(moveTo) {
+          var rect = this.rect;
+          if (moveTo.left < wallBBox2.right && moveTo.top > wallBBox2.top) { // Inside
+            if (rect.left >= wallBBox2.right) {
+              moveTo.left = wallBBox2.right;
+            } else if (rect.top <= wallBBox2.top) { // Avoid fixing both left and top.
+              moveTo.top = wallBBox2.top;
+            }
+          }
+        },
+        onMove: function() { line2.position(); },
+        onMoveStart: function() { line2.dash = {animation: true}; },
+        onDragEnd: function() { line2.dash = false; }
+      });
+    
+      new PlainDraggable(target3, {
+        onMove: function() { line2.position(); },
+        onMoveStart: function() { line2.dash = {animation: true}; },
+        onDragEnd: function() { line2.dash = false; },
+        zIndex: false
+      });
+    
+      line2 = new LeaderLine(target1, target3,
+        {startPlug: 'disc', endLabel: LeaderLine.pathLabel('', {fontFamily: 'Arial, sans-serif'})});
+    });
+    </script>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">     -->
+  </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
