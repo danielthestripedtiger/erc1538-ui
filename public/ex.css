@@ -8,14 +8,13 @@
 .componentImg {
   max-height: 50px;
   max-width: 50px;
-  float: left;
 }
 
 /* line 9, ex.scss */
 .draggable {
   display: inline-block;
-  width: 1;
-  height: 1;
+  width: 100px;
+  height: 100px;
   padding: 1px 3px;
   font-weight: bold;
   color: white;
@@ -198,7 +197,7 @@
 
 /* line 160, ex.scss */
 #ex-050-stage {
-  overflow: scroll;
+  overflow: auto;
   width: 75%;
   height: 10000px;
   position: relative;
