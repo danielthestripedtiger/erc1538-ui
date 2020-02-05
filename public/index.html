@@ -106,15 +106,15 @@
             }
           }
         },
-        onMove: function() { line.position(); },
-        onMoveStart: function() { line.dash = {animation: true}; },
-        onDragEnd: function() { line.dash = false; }
+        onMove: function() { line.position(); line2.position();  },
+        onMoveStart: function() { line.dash = {animation: true};  line2.dash = {animation: true}},
+        onDragEnd: function() { line.dash = false; line2.dash = false; },
       });
     
       new PlainDraggable(target2, {
-        onMove: function() { line.position(); },
+        onMove: function() { line.position();  line2.position();},
         onMoveStart: function() { line.dash = {animation: true}; },
-        onDragEnd: function() { line.dash = false; },
+        onDragEnd: function() { line.dash = false; line2.dash = false; },
         zIndex: false
       });
     
@@ -147,15 +147,15 @@
             }
           }
         },
-        onMove: function() { line2.position(); },
-        onMoveStart: function() { line2.dash = {animation: true}; },
-        onDragEnd: function() { line2.dash = false; }
+        onMove: function() {  line.position(); line2.position(); },
+        onMoveStart: function() { line.dash = {animation: true};  line2.dash = {animation: true}},
+        onDragEnd: function() { line.dash = false; line2.dash = false; },
       });
     
       new PlainDraggable(target3, {
-        onMove: function() { line2.position(); },
+        onMove: function() { line.position(); line2.position();  },
         onMoveStart: function() { line2.dash = {animation: true}; },
-        onDragEnd: function() { line2.dash = false; },
+        onDragEnd: function() { line.dash = false; line2.dash = false; },
         zIndex: false
       });
     
